@@ -25,7 +25,7 @@ public class Main {
                 }
             }
             if (isPrime)
-                producer.send(new ProducerRecord<>("prime-topic","prime_" + ++count, String.valueOf(i)));
+                producer.send(new ProducerRecord<>("my-topic","prime_" + ++count, String.valueOf(i)));
         }
         producer.close();
     }
