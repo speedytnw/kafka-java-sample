@@ -19,6 +19,10 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
+application {
+    mainClass = 'io.arete.kafka_sample.Main'
+}
+
 test {
     useJUnitPlatform()
 }
